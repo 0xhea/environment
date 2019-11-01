@@ -1,7 +1,7 @@
 mycd_func()
 {
     nowpwd=`pwd`
-    if [ $# == 0 ];then
+    if [[ $# == 0 ]];then
         cd
     else
         mycd=$1
@@ -17,7 +17,7 @@ mycd_func()
         fi
     fi
 
-    if [ $# == 0 ];then
+    if [[ $# == 0 ]];then
         ls
     else
         if [ -d $mycd_new ];then
