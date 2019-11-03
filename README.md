@@ -4,12 +4,14 @@
 
 ```
 git clone git@github.com:RexxarZ/environment.git ~/.environment
+sh ~/.environment/install_environment.sh
 ```
 
-## How to use?
+## What will install_environment.sh do?
+
+Store the previous configuration file, and do this:
 
 ```
-cd ~/.environment
 stow zsh
 stow vim
 ```
