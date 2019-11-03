@@ -183,7 +183,7 @@ noremap tt :NERDTreeToggle<CR>
 " let NERDTreeMapOpenExpl = ""
 " let NERDTreeMapUpdir = "J"
 " let NERDTreeMapUpdirKeepOpen = "j"
-" let NERDTreeMapOpenSplit = ""
+let NERDTreeMapOpenSplit = "h"
 " let NERDTreeMapOpenVSplit = "L"
 " let NERDTreeMapActivateNode = "l"
 " let NERDTreeMapOpenInTab = "o"
