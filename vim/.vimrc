@@ -112,10 +112,10 @@ inoremap <Esc>l <right>
 " ===
 map S :w<CR>
 map Q :q<CR>
-map R :source ~/.vim/vimrc<CR>
+map R :source ~/.vimrc<CR>
 
 " Open the vimrc file anytime
-map <LEADER>rc :e ~/.vim/vimrc<CR>
+map <LEADER>rc :e ~/.vimrc<CR>
 
 " Press space twice to jump to the next '<++>' and edit it
 noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
