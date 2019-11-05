@@ -64,32 +64,17 @@ let mapleader=" "
 
 " Move Map
 "     ^
-"     i
-" < j   l >
 "     k
+" < h   l >
+"     j
 "     v
-noremap j h
-noremap k j
-noremap i k
-
-noremap I 5k
-noremap K 5j
+noremap K 5k
+noremap J 5j
 noremap L $
-noremap J 0
+noremap H 0
 
 " Word Move Map
 " w b e
-
-" Insert Map
-noremap h i
-noremap H I
-
-" Jump Map
-noremap gi gk
-noremap gk gj
-noremap gj gh
-
-noremap gh gi
 
 " Search Map
 noremap n nzz
@@ -98,14 +83,10 @@ noremap <LEADER><CR> :nohlsearch<CR>
 
 " Insert Mode Move Map
 " = <TAB> = <C-i>, so cant map <C-i>
-" inoremap <C-i> <up>
-" inoremap <C-k> <down>
-" inoremap <C-j> <left>
-" inoremap <C-l> <right>
-inoremap <Esc>i <up>
-inoremap <Esc>k <down>
-inoremap <Esc>j <left>
-inoremap <Esc>l <right>
+inoremap <C-k> <up>
+inoremap <C-j> <down>
+inoremap <C-h> <left>
+inoremap <C-l> <right>
 
 " ===
 " === Useful Cmd Map
@@ -123,19 +104,14 @@ noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 " Split Map
 map s <nop>
 
-map si :set nosplitbelow<CR>:split<CR>
-map sk :set splitbelow<CR>:split<CR>
-map sj :set nosplitright<CR>:vsplit<CR>
+map sk :set nosplitbelow<CR>:split<CR>
+map sj :set splitbelow<CR>:split<CR>
+map sh :set nosplitright<CR>:vsplit<CR>
 map sl :set splitright<CR>:vsplit<CR>
 
-noremap <C-w>i <C-w>k
-noremap <C-w>k <C-w>j
-noremap <C-w>j <C-w>h
-noremap <C-w>h <C-w>i
-
-map <LEADER>i <C-w>i
 map <LEADER>k <C-w>k
 map <LEADER>j <C-w>j
+map <LEADER>h <C-w>h
 map <LEADER>l <C-w>l
 
 " Change Split Window Size
@@ -145,16 +121,16 @@ map <LEADER>l <C-w>l
 " map <right> :vertical resize+5<CR>
 
 " Change Split Mode
-map sh <C-w>t<C-w>K
-map sv <C-w>t<C-w>H
+map sK <C-w>t<C-w>K
+map sH <C-w>t<C-w>H
 
 " Rotate screens
-noremap srh <C-w>b<C-w>K
-noremap srv <C-w>b<C-w>H
+noremap srk <C-w>b<C-w>K
+noremap srh <C-w>b<C-w>H
 
 " Tab Map
 map tu :tabe<CR>
-map tj :tabp<CR>
+map th :tabp<CR>
 map tl :tabn<CR>
 
 " ===
@@ -187,7 +163,7 @@ noremap tt :NERDTreeToggle<CR>
 " let NERDTreeMapOpenExpl = ""
 " let NERDTreeMapUpdir = "J"
 " let NERDTreeMapUpdirKeepOpen = "j"
-let NERDTreeMapOpenSplit = "h"
+" let NERDTreeMapOpenSplit = "h"
 " let NERDTreeMapOpenVSplit = "L"
 " let NERDTreeMapActivateNode = "l"
 " let NERDTreeMapOpenInTab = "o"
