@@ -129,7 +129,7 @@ noremap srk <C-w>b<C-w>K
 noremap srh <C-w>b<C-w>H
 
 " Tab Map
-map tu :tabe<CR>
+map ti :tabe<CR>
 map th :tabp<CR>
 map tl :tabn<CR>
 
