@@ -98,10 +98,14 @@ noremap <LEADER><CR> :nohlsearch<CR>
 
 " Insert Mode Move Map
 " = <TAB> = <C-i>, so cant map <C-i>
-" inoremap <C-j> <left>
 " inoremap <C-i> <up>
 " inoremap <C-k> <down>
+" inoremap <C-j> <left>
 " inoremap <C-l> <right>
+inoremap <Esc>i <up>
+inoremap <Esc>k <down>
+inoremap <Esc>j <left>
+inoremap <Esc>l <right>
 
 " ===
 " === Useful Cmd Map
