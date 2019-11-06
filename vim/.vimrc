@@ -82,7 +82,7 @@ noremap N Nzz
 noremap <LEADER><CR> :nohlsearch<CR>
 
 " Insert Mode Move Map
-" = <TAB> = <C-i>, so cant map <C-i>
+" <TAB> = <C-i>, so cant map <C-i>
 inoremap <C-k> <up>
 inoremap <C-j> <down>
 inoremap <C-h> <left>
