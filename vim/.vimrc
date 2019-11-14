@@ -83,10 +83,12 @@ noremap <LEADER><CR> :nohlsearch<CR>
 
 " Insert Mode Move Map
 " <TAB> = <C-i>, so cant map <C-i>
-inoremap <C-k> <up>
-inoremap <C-j> <down>
-inoremap <C-h> <left>
-inoremap <C-l> <right>
+" <BackSpace> = <C-h>, so cant map <C-h>
+" You can use <C-o> + hjkl to move in insert mode
+" inoremap <C-k> <up>
+" inoremap <C-j> <down>
+" inoremap <C-h> <left>
+" inoremap <C-l> <right>
 
 " ===
 " === Useful Cmd Map
