@@ -3,7 +3,7 @@
 ## How to install?
 
 ```
-git clone git@github.com:RexxarZ/environment.git ~/.environment
+git clone https://github.com/z-eric/environment.git ~/.environment
 sh ~/.environment/install_environment.sh
 ```
 
