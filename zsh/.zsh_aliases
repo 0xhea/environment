@@ -1,3 +1,14 @@
+cdf()
+{
+   myfinderpath="`osascript -e 'tell application "Finder" to set myname to POSIX path of (target of window 1 as alias)' 2>/dev/null`"
+   if [ -n "$myfinderpath" ]; then
+      echo "cd to $myfinderpath"
+      cd "$myfinderpath"
+   else
+      echo "no finder window finded"
+   fi
+}
+
 mycd_func()
 {
     nowpwd=`pwd`
@@ -46,3 +57,5 @@ function aliasf()
 
 aliasf
 alias cd=mycd_func
+alias glogr="git log --oneline --graph --branches --remotes"
+alias grsst="git restore --staged"
