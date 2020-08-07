@@ -100,6 +100,8 @@ map R :source ~/.vimrc<CR>
 " Open the vimrc file anytime
 map <LEADER>rc :e ~/.vimrc<CR>
 
+noremap <LEADER>n :set nu!<CR>:set relativenumber!<CR> 
+
 " Press space twice to jump to the next '<++>' and edit it
 noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
